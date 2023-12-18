@@ -1,0 +1,802 @@
+2023-12-18 10:29:57.3918 Debug Message Template Auto Format enabled
+2023-12-18 10:29:57.5462 Info Loading assembly name: NLog.Database
+2023-12-18 10:29:58.4368 Info NLog.Database, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-18 10:29:58.4368 Debug ScanAssembly('NLog.Database, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2023-12-18 10:29:58.6619 Debug Loading assembly name: NLog.Database succeeded!
+2023-12-18 10:29:58.7192 Debug Object reflection needed to create instance of type: NLog.Targets.DatabaseParameterInfo
+2023-12-18 10:29:58.7268 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.7268 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2023-12-18 10:29:58.7268 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.7268 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-12-18 10:29:58.7381 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.7381 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-12-18 10:29:58.7626 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.7626 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2023-12-18 10:29:58.7756 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]
+2023-12-18 10:29:58.7858 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.7858 Trace Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2023-12-18 10:29:58.7858 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.7858 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${loggername}'
+2023-12-18 10:29:58.7858 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.7858 Trace Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2023-12-18 10:29:58.8006 Debug Adding target NLog.Targets.DatabaseTarget(Name=dbTarget)
+2023-12-18 10:29:58.8006 Info Registered target NLog.Targets.DatabaseTarget(Name=dbTarget)
+2023-12-18 10:29:58.8006 Trace ParseRulesElement
+2023-12-18 10:29:58.8006 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-18 10:29:58.8222 Debug Start watching file-filter 'NLog.config' in directory: C:\Users\PC\Desktop\Logging\NLog.API\bin\Debug\net8.0
+2023-12-18 10:29:58.8222 Debug --- NLog configuration dump ---
+2023-12-18 10:29:58.8222 Debug Targets:
+2023-12-18 10:29:58.8222 Debug DatabaseTarget(Name=dbTarget)
+2023-12-18 10:29:58.8222 Debug Rules:
+2023-12-18 10:29:58.8333 Debug logNamePattern: (:All) levels: [ Info Warn Error Fatal ] writeTo: [ dbTarget ]
+2023-12-18 10:29:58.8333 Debug --- End of NLog configuration dump ---
+2023-12-18 10:29:58.8333 Trace FindReachableObject<System.Object>:
+2023-12-18 10:29:58.8333 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Info Warn Error Fatal ] writeTo: [ dbTarget ]'
+2023-12-18 10:29:58.8333 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-12-18 10:29:58.8333 Trace  Scanning DatabaseTarget 'DatabaseTarget(Name=dbTarget)'
+2023-12-18 10:29:58.8333 Trace   Scanning Property ConnectionString 'Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;' NLog.Layouts.Layout
+2023-12-18 10:29:58.8333 Trace   Scanning SimpleLayout 'Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;'
+2023-12-18 10:29:58.8470 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8470 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:29:58.8470 Trace   Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:29:58.8470 Trace   Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:29:58.8470 Trace   Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:29:58.8470 Trace   Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:29:58.8470 Trace   Scanning Property DBHost '.' NLog.Layouts.Layout
+2023-12-18 10:29:58.8470 Trace   Scanning SimpleLayout '.'
+2023-12-18 10:29:58.8470 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8470 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:29:58.8623 Trace   Scanning Property CommandText 'INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)' NLog.Layouts.Layout
+2023-12-18 10:29:58.8623 Trace   Scanning SimpleLayout 'INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)'
+2023-12-18 10:29:58.8623 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8623 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:29:58.8623 Trace   Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseParameterInfo]
+2023-12-18 10:29:58.8623 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:58.8623 Trace    Scanning Property Layout '${date}' NLog.Layouts.Layout
+2023-12-18 10:29:58.8623 Trace    Scanning SimpleLayout '${date}'
+2023-12-18 10:29:58.8623 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8623 Trace     Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2023-12-18 10:29:58.8623 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:58.8776 Trace    Scanning Property Layout '${message}' NLog.Layouts.Layout
+2023-12-18 10:29:58.8776 Trace    Scanning SimpleLayout '${message}'
+2023-12-18 10:29:58.8776 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8776 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-12-18 10:29:58.8776 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:58.8776 Trace    Scanning Property Layout '${level}' NLog.Layouts.Layout
+2023-12-18 10:29:58.8776 Trace    Scanning SimpleLayout '${level}'
+2023-12-18 10:29:58.8776 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8776 Trace     Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-12-18 10:29:58.8776 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:58.8776 Trace    Scanning Property Layout '${exception}' NLog.Layouts.Layout
+2023-12-18 10:29:58.8776 Trace    Scanning SimpleLayout '${exception}'
+2023-12-18 10:29:58.8776 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8937 Trace     Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2023-12-18 10:29:58.8937 Trace      Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]
+2023-12-18 10:29:58.8937 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:58.8937 Trace    Scanning Property Layout '${stacktrace}' NLog.Layouts.Layout
+2023-12-18 10:29:58.8937 Trace    Scanning SimpleLayout '${stacktrace}'
+2023-12-18 10:29:58.8937 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8937 Trace     Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2023-12-18 10:29:58.8937 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:58.8937 Trace    Scanning Property Layout '${logger}' NLog.Layouts.Layout
+2023-12-18 10:29:58.8937 Trace    Scanning SimpleLayout '${logger}'
+2023-12-18 10:29:58.8937 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.8937 Trace     Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${loggername}'
+2023-12-18 10:29:58.8937 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:58.9091 Trace    Scanning Property Layout '${aspnet-request-url}' NLog.Layouts.Layout
+2023-12-18 10:29:58.9091 Trace    Scanning SimpleLayout '${aspnet-request-url}'
+2023-12-18 10:29:58.9091 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.9091 Trace     Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2023-12-18 10:29:58.9091 Trace   Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseParameterInfo]
+2023-12-18 10:29:58.9091 Trace   Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:29:58.9091 Trace   Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:29:58.9091 Trace   Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:29:58.9091 Trace   Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:29:58.9091 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-12-18 10:29:58.9091 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-12-18 10:29:58.9249 Info Validating config: TargetNames=dbTarget, ConfigItems=29, FilePath=C:\Users\PC\Desktop\Logging\NLog.API\bin\Debug\net8.0\NLog.config
+2023-12-18 10:29:58.9249 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2023-12-18 10:29:58.9249 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2023-12-18 10:29:58.9437 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2023-12-18 10:29:58.9437 Trace Initializing ${aspnet-request-url}
+2023-12-18 10:29:58.9437 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.9437 Trace Scanning SimpleLayout '${aspnet-request-url}'
+2023-12-18 10:29:58.9437 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.9557 Trace  Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2023-12-18 10:29:58.9557 Trace Initializing Layout Renderer: ${loggername}
+2023-12-18 10:29:58.9557 Trace Initializing ${logger}
+2023-12-18 10:29:58.9557 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:58.9557 Trace Scanning SimpleLayout '${logger}'
+2023-12-18 10:29:58.9713 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:58.9713 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${loggername}'
+2023-12-18 10:29:58.9713 Trace Initializing Layout Renderer: ${stacktrace}
+2023-12-18 10:29:59.0039 Trace Initializing ${stacktrace}
+2023-12-18 10:29:59.0039 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:59.0039 Trace Scanning SimpleLayout '${stacktrace}'
+2023-12-18 10:29:59.0039 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:59.0039 Trace  Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2023-12-18 10:29:59.0039 Trace Initializing Layout Renderer: ${exception}
+2023-12-18 10:29:59.0388 Trace Initializing ${exception}
+2023-12-18 10:29:59.0388 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:59.0540 Trace Scanning SimpleLayout '${exception}'
+2023-12-18 10:29:59.0540 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:59.0540 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2023-12-18 10:29:59.0540 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]
+2023-12-18 10:29:59.0540 Trace Initializing Layout Renderer: ${level}
+2023-12-18 10:29:59.0667 Trace Initializing ${level}
+2023-12-18 10:29:59.0667 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:59.0667 Trace Scanning SimpleLayout '${level}'
+2023-12-18 10:29:59.0667 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:59.0667 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-12-18 10:29:59.0667 Trace Initializing Layout Renderer: ${message}
+2023-12-18 10:29:59.0667 Trace Initializing ${message}
+2023-12-18 10:29:59.0667 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:59.0667 Trace Scanning SimpleLayout '${message}'
+2023-12-18 10:29:59.0667 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:59.0828 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-12-18 10:29:59.0828 Trace Initializing Layout Renderer: ${date}
+2023-12-18 10:29:59.0828 Trace Initializing ${date}
+2023-12-18 10:29:59.0828 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:59.0828 Trace Scanning SimpleLayout '${date}'
+2023-12-18 10:29:59.0975 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:59.0975 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2023-12-18 10:29:59.0975 Trace Initializing Layout Renderer: ${literal}
+2023-12-18 10:29:59.0975 Trace Initializing INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+2023-12-18 10:29:59.0975 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:59.0975 Trace Scanning SimpleLayout 'INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)'
+2023-12-18 10:29:59.0975 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:59.0975 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:29:59.0975 Trace Initializing Layout Renderer: ${literal}
+2023-12-18 10:29:59.0975 Trace Initializing .
+2023-12-18 10:29:59.2845 Trace Scanning SimpleLayout '.'
+2023-12-18 10:29:59.2845 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:59.2845 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:29:59.2845 Trace Initializing Layout Renderer: ${literal}
+2023-12-18 10:29:59.2845 Trace Initializing Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;
+2023-12-18 10:29:59.2845 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2023-12-18 10:29:59.2845 Trace Scanning SimpleLayout 'Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;'
+2023-12-18 10:29:59.2845 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:29:59.2845 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:29:59.2845 Trace Initializing DatabaseTarget(Name=dbTarget)
+2023-12-18 10:29:59.3029 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-12-18 10:29:59.3029 Trace Scanning DatabaseTarget 'DatabaseTarget(Name=dbTarget)'
+2023-12-18 10:29:59.3029 Trace  Scanning Property ConnectionString 'Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;' NLog.Layouts.Layout
+2023-12-18 10:29:59.3029 Trace  Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:29:59.3029 Trace  Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:29:59.3029 Trace  Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:29:59.3029 Trace  Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:29:59.3029 Trace  Scanning Property DBHost '.' NLog.Layouts.Layout
+2023-12-18 10:29:59.3156 Trace  Scanning Property CommandText 'INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)' NLog.Layouts.Layout
+2023-12-18 10:29:59.3156 Trace  Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseParameterInfo]
+2023-12-18 10:29:59.3156 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:59.3156 Trace   Scanning Property Layout '${date}' NLog.Layouts.Layout
+2023-12-18 10:29:59.3156 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:59.3156 Trace   Scanning Property Layout '${message}' NLog.Layouts.Layout
+2023-12-18 10:29:59.3156 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:59.3156 Trace   Scanning Property Layout '${level}' NLog.Layouts.Layout
+2023-12-18 10:29:59.3156 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:59.3156 Trace   Scanning Property Layout '${exception}' NLog.Layouts.Layout
+2023-12-18 10:29:59.3156 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:59.3156 Trace   Scanning Property Layout '${stacktrace}' NLog.Layouts.Layout
+2023-12-18 10:29:59.3156 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:59.3307 Trace   Scanning Property Layout '${logger}' NLog.Layouts.Layout
+2023-12-18 10:29:59.3307 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:29:59.3307 Trace   Scanning Property Layout '${aspnet-request-url}' NLog.Layouts.Layout
+2023-12-18 10:29:59.3307 Trace  Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseParameterInfo]
+2023-12-18 10:29:59.3307 Trace  Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:29:59.3307 Trace  Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:29:59.3307 Trace  Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:29:59.3307 Trace  Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:29:59.3307 Trace DatabaseTarget(Name=dbTarget) has 10 layouts
+2023-12-18 10:29:59.4923 Warn DatabaseTarget(Name=dbTarget): Failed to load assembly 'Microsoft.Data.SqlClient'. Falling back to 'System.Data.SqlClient'. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Data.SqlClient, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'Microsoft.Data.SqlClient, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at NLog.Targets.DatabaseTarget.SetConnectionType()
+2023-12-18 10:30:01.3067 Info Configuration initialized.
+2023-12-18 10:30:01.3174 Debug Targets configured when LogLevel >= Info for Logger: Program
+2023-12-18 10:30:01.3174 Debug Logger Program [Info] => dbTarget
+2023-12-18 10:30:01.3174 Debug Logger Program [Warn] => dbTarget
+2023-12-18 10:30:01.3174 Debug Logger Program [Error] => dbTarget
+2023-12-18 10:30:01.3174 Debug Logger Program [Fatal] => dbTarget
+2023-12-18 10:30:01.3397 Trace Assembly 'NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2023-12-18 10:30:01.5835 Debug Hide assemblies for callsite
+2023-12-18 10:30:01.5835 Debug Skip loading NLogLoggingConfiguration from empty config section: NLog
+2023-12-18 10:30:01.5835 Trace FindReachableObject<System.Object>:
+2023-12-18 10:30:01.5835 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Info Warn Error Fatal ] writeTo: [ dbTarget ]'
+2023-12-18 10:30:01.5835 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2023-12-18 10:30:01.5835 Trace  Scanning DatabaseTarget 'DatabaseTarget(Name=dbTarget)'
+2023-12-18 10:30:01.5835 Trace   Scanning Property ConnectionString 'Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;' NLog.Layouts.Layout
+2023-12-18 10:30:01.5835 Trace   Scanning SimpleLayout 'Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;'
+2023-12-18 10:30:01.5979 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.5979 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:30:01.5979 Trace   Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:30:01.5979 Trace   Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:30:01.5979 Trace   Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:30:01.5979 Trace   Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:30:01.5979 Trace   Scanning Property DBHost '.' NLog.Layouts.Layout
+2023-12-18 10:30:01.5979 Trace   Scanning SimpleLayout '.'
+2023-12-18 10:30:01.5979 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6170 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:30:01.6170 Trace   Scanning Property CommandText 'INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)' NLog.Layouts.Layout
+2023-12-18 10:30:01.6170 Trace   Scanning SimpleLayout 'INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)'
+2023-12-18 10:30:01.6170 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6170 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2023-12-18 10:30:01.6275 Trace   Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseParameterInfo]
+2023-12-18 10:30:01.6275 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.6275 Trace    Scanning Property Layout '${date}' NLog.Layouts.Layout
+2023-12-18 10:30:01.6275 Trace    Scanning SimpleLayout '${date}'
+2023-12-18 10:30:01.6275 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6275 Trace     Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2023-12-18 10:30:01.6275 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.6275 Trace    Scanning Property Layout '${message}' NLog.Layouts.Layout
+2023-12-18 10:30:01.6275 Trace    Scanning SimpleLayout '${message}'
+2023-12-18 10:30:01.6435 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6435 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2023-12-18 10:30:01.6435 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.6435 Trace    Scanning Property Layout '${level}' NLog.Layouts.Layout
+2023-12-18 10:30:01.6435 Trace    Scanning SimpleLayout '${level}'
+2023-12-18 10:30:01.6435 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6435 Trace     Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2023-12-18 10:30:01.6435 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.6435 Trace    Scanning Property Layout '${exception}' NLog.Layouts.Layout
+2023-12-18 10:30:01.6435 Trace    Scanning SimpleLayout '${exception}'
+2023-12-18 10:30:01.6435 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6585 Trace     Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2023-12-18 10:30:01.6585 Trace      Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]
+2023-12-18 10:30:01.6585 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.6585 Trace    Scanning Property Layout '${stacktrace}' NLog.Layouts.Layout
+2023-12-18 10:30:01.6585 Trace    Scanning SimpleLayout '${stacktrace}'
+2023-12-18 10:30:01.6585 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6585 Trace     Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2023-12-18 10:30:01.6585 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.6585 Trace    Scanning Property Layout '${logger}' NLog.Layouts.Layout
+2023-12-18 10:30:01.6585 Trace    Scanning SimpleLayout '${logger}'
+2023-12-18 10:30:01.6585 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6585 Trace     Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${loggername}'
+2023-12-18 10:30:01.6585 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.6585 Trace    Scanning Property Layout '${aspnet-request-url}' NLog.Layouts.Layout
+2023-12-18 10:30:01.6585 Trace    Scanning SimpleLayout '${aspnet-request-url}'
+2023-12-18 10:30:01.6585 Trace     Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2023-12-18 10:30:01.6751 Trace     Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2023-12-18 10:30:01.6751 Trace   Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseParameterInfo]
+2023-12-18 10:30:01.6751 Trace   Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:30:01.6751 Trace   Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:30:01.6751 Trace   Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:30:01.6751 Trace   Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:30:01.6751 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2023-12-18 10:30:01.6896 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2023-12-18 10:30:01.6896 Info Validating config: TargetNames=dbTarget, ConfigItems=29, FilePath=C:\Users\PC\Desktop\Logging\NLog.API\bin\Debug\net8.0\NLog.config
+2023-12-18 10:30:01.6896 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2023-12-18 10:30:01.6896 Trace Initializing ${aspnet-request-url}
+2023-12-18 10:30:01.6896 Trace Initializing Layout Renderer: ${loggername}
+2023-12-18 10:30:01.6896 Trace Initializing ${logger}
+2023-12-18 10:30:01.6896 Trace Initializing Layout Renderer: ${stacktrace}
+2023-12-18 10:30:01.6896 Trace Initializing ${stacktrace}
+2023-12-18 10:30:01.6896 Trace Initializing Layout Renderer: ${exception}
+2023-12-18 10:30:01.6896 Trace Initializing ${exception}
+2023-12-18 10:30:01.7056 Trace Initializing Layout Renderer: ${level}
+2023-12-18 10:30:01.7056 Trace Initializing ${level}
+2023-12-18 10:30:01.7056 Trace Initializing Layout Renderer: ${message}
+2023-12-18 10:30:01.7056 Trace Initializing ${message}
+2023-12-18 10:30:01.7056 Trace Initializing Layout Renderer: ${date}
+2023-12-18 10:30:01.7056 Trace Initializing ${date}
+2023-12-18 10:30:01.7056 Trace Initializing Layout Renderer: ${literal}
+2023-12-18 10:30:01.7056 Trace Initializing INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+2023-12-18 10:30:01.7056 Trace Initializing Layout Renderer: ${literal}
+2023-12-18 10:30:01.7056 Trace Initializing .
+2023-12-18 10:30:01.7214 Trace Initializing Layout Renderer: ${literal}
+2023-12-18 10:30:01.7214 Trace Initializing Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;
+2023-12-18 10:30:01.7214 Trace Initializing DatabaseTarget(Name=dbTarget)
+2023-12-18 10:30:01.7214 Trace FindReachableObject<NLog.Layouts.Layout>:
+2023-12-18 10:30:01.7214 Trace Scanning DatabaseTarget 'DatabaseTarget(Name=dbTarget)'
+2023-12-18 10:30:01.7214 Trace  Scanning Property ConnectionString 'Server=DESKTOP-C4TFU2J\\SQLEXPRESS;Database=NLog;Trusted_Connection=True;' NLog.Layouts.Layout
+2023-12-18 10:30:01.7214 Trace  Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:30:01.7214 Trace  Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:30:01.7214 Trace  Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:30:01.7214 Trace  Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseCommandInfo]
+2023-12-18 10:30:01.7366 Trace  Scanning Property DBHost '.' NLog.Layouts.Layout
+2023-12-18 10:30:01.7366 Trace  Scanning Property CommandText 'INSERT INTO Logs(CreatedOn,Message,Level,Exception,StackTrace,Logger,Url)     VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)' NLog.Layouts.Layout
+2023-12-18 10:30:01.7366 Trace  Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseParameterInfo]
+2023-12-18 10:30:01.7366 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.7366 Trace   Scanning Property Layout '${date}' NLog.Layouts.Layout
+2023-12-18 10:30:01.7366 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.7366 Trace   Scanning Property Layout '${message}' NLog.Layouts.Layout
+2023-12-18 10:30:01.7366 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.7366 Trace   Scanning Property Layout '${level}' NLog.Layouts.Layout
+2023-12-18 10:30:01.7366 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.7366 Trace   Scanning Property Layout '${exception}' NLog.Layouts.Layout
+2023-12-18 10:30:01.7524 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.7524 Trace   Scanning Property Layout '${stacktrace}' NLog.Layouts.Layout
+2023-12-18 10:30:01.7524 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.7524 Trace   Scanning Property Layout '${logger}' NLog.Layouts.Layout
+2023-12-18 10:30:01.7524 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2023-12-18 10:30:01.7524 Trace   Scanning Property Layout '${aspnet-request-url}' NLog.Layouts.Layout
+2023-12-18 10:30:01.7524 Trace  Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseParameterInfo]
+2023-12-18 10:30:01.7524 Trace  Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:30:01.7524 Trace  Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:30:01.7524 Trace  Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:30:01.7524 Trace  Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic.IList`1[NLog.Targets.DatabaseObjectPropertyInfo]
+2023-12-18 10:30:01.7524 Trace DatabaseTarget(Name=dbTarget) has 10 layouts
+2023-12-18 10:30:01.7707 Debug Targets configured when LogLevel >= Info for Logger: Program
+2023-12-18 10:30:01.7707 Debug Logger Program [Info] => dbTarget
+2023-12-18 10:30:01.7707 Debug Logger Program [Warn] => dbTarget
+2023-12-18 10:30:01.7707 Debug Logger Program [Error] => dbTarget
+2023-12-18 10:30:01.7707 Debug Logger Program [Fatal] => dbTarget
+2023-12-18 10:30:01.8511 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2023-12-18 10:30:01.8511 Debug Logger Microsoft.Extensions.Hosting.Internal.ApplicationLifetime [Info] => dbTarget
+2023-12-18 10:30:01.8511 Debug Logger Microsoft.Extensions.Hosting.Internal.ApplicationLifetime [Warn] => dbTarget
+2023-12-18 10:30:01.8511 Debug Logger Microsoft.Extensions.Hosting.Internal.ApplicationLifetime [Error] => dbTarget
+2023-12-18 10:30:01.8511 Debug Logger Microsoft.Extensions.Hosting.Internal.ApplicationLifetime [Fatal] => dbTarget
+2023-12-18 10:30:01.8511 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.Extensions.Hosting.Internal.Host
+2023-12-18 10:30:01.8511 Debug Logger Microsoft.Extensions.Hosting.Internal.Host [Info] => dbTarget
+2023-12-18 10:30:01.8511 Debug Logger Microsoft.Extensions.Hosting.Internal.Host [Warn] => dbTarget
+2023-12-18 10:30:01.8511 Debug Logger Microsoft.Extensions.Hosting.Internal.Host [Error] => dbTarget
+2023-12-18 10:30:01.8615 Debug Logger Microsoft.Extensions.Hosting.Internal.Host [Fatal] => dbTarget
+2023-12-18 10:30:01.8615 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.Hosting.Lifetime
+2023-12-18 10:30:01.8615 Debug Logger Microsoft.Hosting.Lifetime [Info] => dbTarget
+2023-12-18 10:30:01.8615 Debug Logger Microsoft.Hosting.Lifetime [Warn] => dbTarget
+2023-12-18 10:30:01.8615 Debug Logger Microsoft.Hosting.Lifetime [Error] => dbTarget
+2023-12-18 10:30:01.8615 Debug Logger Microsoft.Hosting.Lifetime [Fatal] => dbTarget
+2023-12-18 10:30:02.0916 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2023-12-18 10:30:02.0916 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer [Info] => dbTarget
+2023-12-18 10:30:02.1108 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer [Warn] => dbTarget
+2023-12-18 10:30:02.1192 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer [Error] => dbTarget
+2023-12-18 10:30:02.1192 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer [Fatal] => dbTarget
+2023-12-18 10:30:02.1192 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2023-12-18 10:30:02.1280 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware [Info] => dbTarget
+2023-12-18 10:30:02.1280 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware [Warn] => dbTarget
+2023-12-18 10:30:02.1280 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware [Error] => dbTarget
+2023-12-18 10:30:02.1280 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:02.3051 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel.Core.Internal.CertificatePathWatcher
+2023-12-18 10:30:02.3051 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Core.Internal.CertificatePathWatcher [Info] => dbTarget
+2023-12-18 10:30:02.3051 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Core.Internal.CertificatePathWatcher [Warn] => dbTarget
+2023-12-18 10:30:02.3051 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Core.Internal.CertificatePathWatcher [Error] => dbTarget
+2023-12-18 10:30:02.3051 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Core.Internal.CertificatePathWatcher [Fatal] => dbTarget
+2023-12-18 10:30:02.3051 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel [Info] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel [Warn] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel [Error] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel [Fatal] => dbTarget
+2023-12-18 10:30:02.3146 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel.BadRequests
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel.BadRequests [Info] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel.BadRequests [Warn] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel.BadRequests [Error] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel.BadRequests [Fatal] => dbTarget
+2023-12-18 10:30:02.3146 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel.Connections
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Connections [Info] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Connections [Warn] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Connections [Error] => dbTarget
+2023-12-18 10:30:02.3146 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Connections [Fatal] => dbTarget
+2023-12-18 10:30:02.3320 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel.Http2
+2023-12-18 10:30:02.3320 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Http2 [Info] => dbTarget
+2023-12-18 10:30:02.3320 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Http2 [Warn] => dbTarget
+2023-12-18 10:30:02.3320 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Http2 [Error] => dbTarget
+2023-12-18 10:30:02.3320 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Http2 [Fatal] => dbTarget
+2023-12-18 10:30:02.3320 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel.Http3
+2023-12-18 10:30:02.3320 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Http3 [Info] => dbTarget
+2023-12-18 10:30:02.3320 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Http3 [Warn] => dbTarget
+2023-12-18 10:30:02.3320 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Http3 [Error] => dbTarget
+2023-12-18 10:30:02.3320 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Http3 [Fatal] => dbTarget
+2023-12-18 10:30:02.5053 Debug Targets configured when LogLevel >= Info for Logger: NLog.API
+2023-12-18 10:30:02.5053 Debug Logger NLog.API [Info] => dbTarget
+2023-12-18 10:30:02.5053 Debug Logger NLog.API [Warn] => dbTarget
+2023-12-18 10:30:02.5053 Debug Logger NLog.API [Error] => dbTarget
+2023-12-18 10:30:02.5053 Debug Logger NLog.API [Fatal] => dbTarget
+2023-12-18 10:30:03.3835 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
+2023-12-18 10:30:03.3835 Debug Logger Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter [Info] => dbTarget
+2023-12-18 10:30:03.3835 Debug Logger Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter [Warn] => dbTarget
+2023-12-18 10:30:03.3835 Debug Logger Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter [Error] => dbTarget
+2023-12-18 10:30:03.3835 Debug Logger Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter [Fatal] => dbTarget
+2023-12-18 10:30:03.8220 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider
+2023-12-18 10:30:03.8220 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider [Info] => dbTarget
+2023-12-18 10:30:03.8220 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider [Warn] => dbTarget
+2023-12-18 10:30:03.8220 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider [Error] => dbTarget
+2023-12-18 10:30:03.8220 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider [Fatal] => dbTarget
+2023-12-18 10:30:03.9099 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
+2023-12-18 10:30:03.9099 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory [Info] => dbTarget
+2023-12-18 10:30:03.9099 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory [Warn] => dbTarget
+2023-12-18 10:30:03.9099 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory [Error] => dbTarget
+2023-12-18 10:30:03.9099 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory [Fatal] => dbTarget
+2023-12-18 10:30:03.9334 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
+2023-12-18 10:30:03.9334 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder [Info] => dbTarget
+2023-12-18 10:30:03.9334 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder [Warn] => dbTarget
+2023-12-18 10:30:03.9334 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder [Error] => dbTarget
+2023-12-18 10:30:03.9334 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder [Fatal] => dbTarget
+2023-12-18 10:30:03.9433 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+2023-12-18 10:30:03.9433 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Info] => dbTarget
+2023-12-18 10:30:03.9433 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Warn] => dbTarget
+2023-12-18 10:30:03.9433 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Error] => dbTarget
+2023-12-18 10:30:03.9433 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Fatal] => dbTarget
+2023-12-18 10:30:04.2916 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2023-12-18 10:30:04.2916 Debug Logger Microsoft.AspNetCore.Hosting.Diagnostics [Info] => dbTarget
+2023-12-18 10:30:04.2916 Debug Logger Microsoft.AspNetCore.Hosting.Diagnostics [Warn] => dbTarget
+2023-12-18 10:30:04.2916 Debug Logger Microsoft.AspNetCore.Hosting.Diagnostics [Error] => dbTarget
+2023-12-18 10:30:04.2916 Debug Logger Microsoft.AspNetCore.Hosting.Diagnostics [Fatal] => dbTarget
+2023-12-18 10:30:04.7362 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
+2023-12-18 10:30:04.7368 Debug Logger Microsoft.AspNetCore.Routing.EndpointMiddleware [Info] => dbTarget
+2023-12-18 10:30:04.7368 Debug Logger Microsoft.AspNetCore.Routing.EndpointMiddleware [Warn] => dbTarget
+2023-12-18 10:30:04.7368 Debug Logger Microsoft.AspNetCore.Routing.EndpointMiddleware [Error] => dbTarget
+2023-12-18 10:30:04.7368 Debug Logger Microsoft.AspNetCore.Routing.EndpointMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:04.7368 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Authorization.AuthorizationMiddleware
+2023-12-18 10:30:04.7368 Debug Logger Microsoft.AspNetCore.Authorization.AuthorizationMiddleware [Info] => dbTarget
+2023-12-18 10:30:04.7368 Debug Logger Microsoft.AspNetCore.Authorization.AuthorizationMiddleware [Warn] => dbTarget
+2023-12-18 10:30:04.7368 Debug Logger Microsoft.AspNetCore.Authorization.AuthorizationMiddleware [Error] => dbTarget
+2023-12-18 10:30:04.7368 Debug Logger Microsoft.AspNetCore.Authorization.AuthorizationMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:04.7580 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+2023-12-18 10:30:04.7580 Debug Logger Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware [Info] => dbTarget
+2023-12-18 10:30:04.7580 Debug Logger Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware [Warn] => dbTarget
+2023-12-18 10:30:04.7580 Debug Logger Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware [Error] => dbTarget
+2023-12-18 10:30:04.7580 Debug Logger Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:04.8484 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+2023-12-18 10:30:04.8484 Debug Logger Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Info] => dbTarget
+2023-12-18 10:30:04.8484 Debug Logger Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Warn] => dbTarget
+2023-12-18 10:30:04.8484 Debug Logger Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Error] => dbTarget
+2023-12-18 10:30:04.8484 Debug Logger Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:05.1894 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+2023-12-18 10:30:05.2170 Debug Logger Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware [Info] => dbTarget
+2023-12-18 10:30:05.2247 Debug Logger Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware [Warn] => dbTarget
+2023-12-18 10:30:05.2247 Debug Logger Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware [Error] => dbTarget
+2023-12-18 10:30:05.2247 Debug Logger Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:05.3297 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+2023-12-18 10:30:05.3334 Debug Logger Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware [Info] => dbTarget
+2023-12-18 10:30:05.3334 Debug Logger Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware [Warn] => dbTarget
+2023-12-18 10:30:05.3334 Debug Logger Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware [Error] => dbTarget
+2023-12-18 10:30:05.3334 Debug Logger Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:05.3642 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+2023-12-18 10:30:05.3642 Debug Logger Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware [Info] => dbTarget
+2023-12-18 10:30:05.3642 Debug Logger Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware [Warn] => dbTarget
+2023-12-18 10:30:05.3642 Debug Logger Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware [Error] => dbTarget
+2023-12-18 10:30:05.3642 Debug Logger Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:05.4823 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware
+2023-12-18 10:30:05.4823 Debug Logger Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware [Info] => dbTarget
+2023-12-18 10:30:05.4823 Debug Logger Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware [Warn] => dbTarget
+2023-12-18 10:30:05.4823 Debug Logger Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware [Error] => dbTarget
+2023-12-18 10:30:05.4823 Debug Logger Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware [Fatal] => dbTarget
+2023-12-18 10:30:06.3457 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2023-12-18 10:30:06.3457 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets [Info] => dbTarget
+2023-12-18 10:30:06.3457 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets [Warn] => dbTarget
+2023-12-18 10:30:06.3457 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets [Error] => dbTarget
+2023-12-18 10:30:06.3457 Debug Logger Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets [Fatal] => dbTarget
+2023-12-18 10:30:06.6114 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:07.7719 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:07.8055 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:07.8055 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:07.8055 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:07.8055 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:07.8055 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:07.8055 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:07.8422 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:07.8422 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:07.8422 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:07.8422 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:07.8460 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:07.8460 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:07.8460 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:07.8460 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:07.8460 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:07.8460 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:07.8460 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:07.8460 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:13.8175 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:13.8433 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:13.8433 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:13.8470 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:14.9036 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+2023-12-18 10:30:14.9036 Debug Logger Microsoft.AspNetCore.Routing.Matching.DfaMatcher [Info] => dbTarget
+2023-12-18 10:30:14.9036 Debug Logger Microsoft.AspNetCore.Routing.Matching.DfaMatcher [Warn] => dbTarget
+2023-12-18 10:30:14.9036 Debug Logger Microsoft.AspNetCore.Routing.Matching.DfaMatcher [Error] => dbTarget
+2023-12-18 10:30:14.9036 Debug Logger Microsoft.AspNetCore.Routing.Matching.DfaMatcher [Fatal] => dbTarget
+2023-12-18 10:30:15.7535 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:15.7535 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:15.7535 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:15.7535 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:15.7727 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:15.7727 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:15.7727 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:15.7727 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:15.8848 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:15.8848 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:15.8848 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:15.8976 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:15.9779 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:15.9779 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:15.9779 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:15.9896 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:16.5893 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:16.5893 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:16.5981 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:16.5981 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:16.6710 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:16.6710 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:16.6710 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:16.6743 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:30:16.9671 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:30:16.9735 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:30:16.9735 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:30:16.9735 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:31:19.6130 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:31:19.6130 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:31:19.6272 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:31:19.6272 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:31:19.6915 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:31:19.6915 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:31:19.6915 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:31:19.6915 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:31:19.7398 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter
+2023-12-18 10:31:19.7398 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter [Info] => dbTarget
+2023-12-18 10:31:19.7398 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter [Warn] => dbTarget
+2023-12-18 10:31:19.7398 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter [Error] => dbTarget
+2023-12-18 10:31:19.7398 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter [Fatal] => dbTarget
+2023-12-18 10:31:19.7398 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter
+2023-12-18 10:31:19.7398 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter [Info] => dbTarget
+2023-12-18 10:31:19.7398 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter [Warn] => dbTarget
+2023-12-18 10:31:19.7398 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter [Error] => dbTarget
+2023-12-18 10:31:19.7398 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter [Fatal] => dbTarget
+2023-12-18 10:31:19.8406 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder
+2023-12-18 10:31:19.8406 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder [Info] => dbTarget
+2023-12-18 10:31:19.8406 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder [Warn] => dbTarget
+2023-12-18 10:31:19.8406 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder [Error] => dbTarget
+2023-12-18 10:31:19.8406 Debug Logger Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder [Fatal] => dbTarget
+2023-12-18 10:31:19.8775 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:31:19.8775 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:31:19.8775 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:31:19.8775 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:31:19.8775 Debug Targets configured when LogLevel >= Info for Logger: NLog.API.Controllers.TodoController
+2023-12-18 10:31:19.8775 Debug Logger NLog.API.Controllers.TodoController [Info] => dbTarget
+2023-12-18 10:31:19.8775 Debug Logger NLog.API.Controllers.TodoController [Warn] => dbTarget
+2023-12-18 10:31:19.8775 Debug Logger NLog.API.Controllers.TodoController [Error] => dbTarget
+2023-12-18 10:31:19.8775 Debug Logger NLog.API.Controllers.TodoController [Fatal] => dbTarget
+2023-12-18 10:31:19.9784 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector
+2023-12-18 10:31:19.9784 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector [Info] => dbTarget
+2023-12-18 10:31:19.9784 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector [Warn] => dbTarget
+2023-12-18 10:31:19.9784 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector [Error] => dbTarget
+2023-12-18 10:31:19.9784 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector [Fatal] => dbTarget
+2023-12-18 10:31:19.9784 Debug Targets configured when LogLevel >= Info for Logger: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+2023-12-18 10:31:19.9784 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Info] => dbTarget
+2023-12-18 10:31:19.9880 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Warn] => dbTarget
+2023-12-18 10:31:19.9880 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Error] => dbTarget
+2023-12-18 10:31:19.9880 Debug Logger Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Fatal] => dbTarget
+2023-12-18 10:31:19.9880 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:31:20.0053 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:31:20.0053 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:31:20.0053 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:31:20.0962 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:31:20.0962 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:31:20.0962 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:31:20.0962 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:31:20.0962 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:31:20.0962 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:31:20.0962 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:31:20.0962 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
+2023-12-18 10:31:20.0962 Trace DatabaseTarget(Name=dbTarget): Open connection.
+2023-12-18 10:31:20.1133 Error DatabaseTarget(Name=dbTarget): Error when writing to database. Exception: System.InvalidOperationException: Instance failure.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NLog.Targets.DatabaseTarget.OpenConnection(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.EnsureConnectionOpen(String connectionString, LogEventInfo logEventInfo)
+   at NLog.Targets.DatabaseTarget.WriteLogEventSuppressTransactionScope(LogEventInfo logEvent, String connectionString)
+2023-12-18 10:31:20.1133 Trace DatabaseTarget(Name=dbTarget): Close connection because of error
+2023-12-18 10:31:20.1133 Trace DatabaseTarget(Name=dbTarget): Close connection (KeepConnection = false).
